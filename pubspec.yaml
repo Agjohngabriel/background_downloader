@@ -3,28 +3,29 @@ description: A multi-platform background file downloader and uploader. Define th
 
 version: 8.9.4
 repository: https://github.com/781flyingdutchman/background_downloader
-
+  
+# Modified environment constraints
 environment:
-  sdk: ^3.5.0
-  flutter:  '>=3.24.0'
+  sdk: ">=2.19.0 <3.5.0"  # Lowered SDK constraint
+  flutter: ">=3.0.0"      # Lowered Flutter constraint
 
 dependencies:
   flutter:
     sdk: flutter
-  logging: ^1.0.2
-  http: ^1.1.0
-  path_provider: ^2.0.2
-  path: ^1.8.1
-  async: ^2.6.0
-  mime: ^2.0.0
-  collection: ^1.15.0
+  logging: ^1.0.0
+  http: ^0.13.0          # Using older http version
+  path_provider: ^2.0.2  # This can stay as is
+  path: ^1.8.0
+  async: ^2.6.0         # This can stay as is
+  mime: ^1.0.0          # Downgraded
+  collection: ^1.15.0   # This can stay as is
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: '>4.0.0 <6.0.0'
-  mockito: ^5.0.17
-  build_runner: ^2.4.13
+  flutter_lints: ^2.0.0  # Downgraded
+  mockito: ^5.0.17      # This can stay as is
+  build_runner: ^2.3.0  # Downgraded
 
 platforms:
   android:
