@@ -44,7 +44,7 @@ class TaskOptions {
   /// Returns the [OnTaskStartCallback] registered with this [TaskOption], or null
   OnTaskStartCallback? get onTaskStartCallBack => _onTaskStartRawHandle != null
       ? PluginUtilities.getCallbackFromHandle(
-              CallbackHandle.fromRawHandle(_onTaskStartRawHandle))
+              CallbackHandle.fromRawHandle(_onTaskStartRawHandle!))
           as OnTaskStartCallback
       : null;
 
@@ -52,7 +52,7 @@ class TaskOptions {
   OnTaskFinishedCallback? get onTaskFinishedCallBack =>
       _onTaskFinishedRawHandle != null
           ? PluginUtilities.getCallbackFromHandle(
-                  CallbackHandle.fromRawHandle(_onTaskFinishedRawHandle))
+                  CallbackHandle.fromRawHandle(_onTaskFinishedRawHandle!))
               as OnTaskFinishedCallback
           : null;
 

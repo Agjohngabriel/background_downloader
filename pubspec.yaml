@@ -6,7 +6,7 @@ repository: https://github.com/781flyingdutchman/background_downloader
   
 # Modified environment constraints
 environment:
-  sdk: ">=2.19.0 <3.5.0"  # Lowered SDK constraint
+  sdk: ">=3.0.0 <3.5.0"  # Lowered SDK constraint
   flutter: ">=3.0.0"      # Lowered Flutter constraint
 
 dependencies:
